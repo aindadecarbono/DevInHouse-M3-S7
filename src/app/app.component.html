@@ -32,6 +32,102 @@
           </p>
         </div>
       </div>
+
+      <div class="row">
+        <h3 class="border-bottom">Tecnologias</h3>
+        <p class="py-5 d-flex justify-content-center">
+          Javascript | CSS | HTML | Angular | C# | Typescript | .NET |SQL Server
+        </p>
+      </div>
+
+      <footer footer class="d-flex justify-content-center text-dark">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Deixe seu comentário
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Comentário
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div
+                  class="container bg-success bg-opacity-25 p-5 my-2 rounded"
+                >
+                  <div
+                    class="h3 pb-2 mb-4 mt-3 border-bottom border-2 text-success"
+                  >
+                    Resposta
+                  </div>
+
+                  <div class="row">
+                    <div class="col mt-2">
+                      <label class="text-success" for="Nome"> Nome </label>
+                      <input
+                        formControlName="nome"
+                        class="form-control"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col mt-3">
+                      <label class="text-success" for="Email">Email</label>
+                      <input
+                        formControlName="email"
+                        class="form-control"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-floating mt-4">
+                    <textarea
+                      class="form-control"
+                      placeholder="Deixe um comentário aqui"
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea">Comentário</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
