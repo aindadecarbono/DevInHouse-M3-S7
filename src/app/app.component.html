@@ -4,130 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruno Coelho</title>
+    <title>M3S7</title>
   </head>
   <body>
-    <div class="container ml-5 my-4 px-5 py-5 bg-dark rounded text-light">
-      <div class="row">
-        <h3 class="border-bottom">Sobre mim</h3>
-        <p class="col-9 py-5">
-          Me chamo Bruno e sou estudante de programação Full-stack pelo SENAI.
-          No momento, estou em transição de carreira. Venho da área da Educação
-          e sou licenciado em Filosofia.
-        </p>
-        <img
-          class="col w-25 h-25 mt-4"
-          src="https://pbs.twimg.com/profile_images/1432091770515562498/4g1s0G9w_400x400.jpg"
-          alt=""
-          srcset=""
-        />
-      </div>
+    <div
+      class="container d-flex flex-column mt-3 px-5 py-4 bg-success bg-gradient rounded text-white border border-start-0 border-dark"
+    >
+      <label for="Nome">Nome</label>
+      <input type="text" />
+      <br />
 
-      <div class="row">
-        <div class="col text-light">
-          <h3 class="border-bottom">Experiência</h3>
-          <p class="py-5">
-            Licenciatura em Filosofia (2013-2018) <br />Licenciatura em
-            Pedagogia (em andamento - início em 2019)
-          </p>
-        </div>
-      </div>
+      <label for="Carga">Carga horária h/a</label>
+      <input type="text" />
+      <br />
 
-      <div class="row">
-        <h3 class="border-bottom">Tecnologias</h3>
-        <p class="py-5 d-flex justify-content-center">
-          Javascript | CSS | HTML | Angular | C# | Typescript | .NET |SQL Server
-        </p>
-      </div>
+      <label for="Escola">Escola</label>
+      <input type="text" />
+      <br />
 
-      <footer footer class="d-flex justify-content-center text-dark">
-        <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Deixe seu comentário
-        </button>
+      <label for="Professor">Professor</label>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Comentário
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div
-                  class="container bg-success bg-opacity-25 p-5 my-2 rounded"
-                >
-                  <div
-                    class="h3 pb-2 mb-4 mt-3 border-bottom border-2 text-success"
-                  >
-                    Resposta
-                  </div>
-
-                  <div class="row">
-                    <div class="col mt-2">
-                      <label class="text-success" for="Nome"> Nome </label>
-                      <input
-                        formControlName="nome"
-                        class="form-control"
-                        type="text"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col mt-3">
-                      <label class="text-success" for="Email">Email</label>
-                      <input
-                        formControlName="email"
-                        class="form-control"
-                        type="email"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-floating mt-4">
-                    <textarea
-                      class="form-control"
-                      placeholder="Deixe um comentário aqui"
-                      id="floatingTextarea"
-                    ></textarea>
-                    <label for="floatingTextarea">Comentário</label>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Fechar
-                </button>
-                <button type="button" class="btn btn-primary">Enviar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <select>
+        <option value="" selected disabled>Selecionar</option>
+        <option value="otavio">Otávio</option>
+        <option value="vivian">Vivian</option>
+        <option value="leandro">Leandro</option>
+        <option value="claudia">Cláudia</option>
+      </select>
     </div>
   </body>
 </html>
