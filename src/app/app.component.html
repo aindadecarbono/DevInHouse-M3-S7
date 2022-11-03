@@ -7,30 +7,37 @@
     <title>M3S7</title>
   </head>
   <body>
-    <div
-      class="container d-flex flex-column mt-3 px-5 py-4 bg-success bg-gradient rounded text-white border border-start-0 border-dark"
-    >
-      <label for="Nome">Nome</label>
-      <input type="text" />
-      <br />
+    <div class="container">
+      <form
+        [formGroup]="formulario"
+        class="d-flex flex-column mt-3 px-5 py-4 bg-success bg-gradient rounded text-white border border-start-0 border-dark"
+        action=""
+      >
+        <label for="Nome">Nome</label>
+        <input type="text" formControlName="nome" />
+        <br />
 
-      <label for="Carga">Carga horária h/a</label>
-      <input type="text" />
-      <br />
+        <label for="Carga">Carga horária h/a</label>
+        <input type="text" formControlName="carga" />
+        <br />
 
-      <label for="Escola">Escola</label>
-      <input type="text" />
-      <br />
+        <label for="Escola">Escola</label>
+        <input type="text" formControlName="escola" />
+        <br />
 
-      <label for="Professor">Professor</label>
+        <label for="Professor">Professor</label>
 
-      <select>
-        <option value="" selected disabled>Selecionar</option>
-        <option value="otavio">Otávio</option>
-        <option value="vivian">Vivian</option>
-        <option value="leandro">Leandro</option>
-        <option value="claudia">Cláudia</option>
-      </select>
+        <select>
+          <option value="" selected disabled>Selecionar</option>
+          <option value="otavio">Otávio</option>
+          <option value="vivian">Vivian</option>
+          <option value="leandro">Leandro</option>
+          <option value="claudia">Cláudia</option>
+        </select>
+        <button (click)="onSubmit()" type="submit" class="btn btn-primary mt-2">
+          Enviar
+        </button>
+      </form>
     </div>
   </body>
 </html>
